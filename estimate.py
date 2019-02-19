@@ -28,7 +28,7 @@ def search_start(df, n):
     for i in range(df.shape[0]):
         df1 = df.iloc[i:i+n, :]
 
-        if df1.alt.iloc[0] < 1500:
+        if df1.alt.iloc[0] < 100:
             continue
         elif df1.roc.mean() <= 0:
             continue
